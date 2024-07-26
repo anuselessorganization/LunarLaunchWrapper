@@ -78,7 +78,7 @@ suspend fun main(args: Array<String>) {
     val (version, textures, cache) = VersionManifest.fetch(gameVersion, lunarModule)
         ?: run {
             println("WHOOPS!")
-            println("We failed to fetch the version manifest, this is likely because you are offline and had no cached version.")
+            println("We failed to fetch the version manifest, this is likely because you are offline and had no cached version. (:P)")
             println("This must be run at least once while connected to the internet.")
 
             return
